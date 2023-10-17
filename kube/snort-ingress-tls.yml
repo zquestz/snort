@@ -5,6 +5,7 @@ metadata:
   namespace: default
   annotations:
     kubernetes.io/tls-acme: "true"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
 spec:
   ingressClassName: nginx
   tls:

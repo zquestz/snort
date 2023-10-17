@@ -61,7 +61,7 @@ class IrisAccount extends Component<Props> {
           <div
             className="cf-turnstile"
             data-sitekey={
-              ["iris.to", "beta.iris.to", "snort.social"].includes(window.location.hostname)
+              ["iris.to", "beta.iris.to", "snort.social", "snort.greyh.at"].includes(window.location.hostname)
                 ? "0x4AAAAAAACsEd8XuwpPTFwz"
                 : "3x00000000000000000000FF"
             }

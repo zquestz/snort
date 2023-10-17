@@ -20,7 +20,7 @@ spec:
         imagePullPolicy: Always
         name: snort
         ports:
-        - containerPort: 8001
+        - containerPort: 8080
         resources:
           requests:
             memory: "16Mi"

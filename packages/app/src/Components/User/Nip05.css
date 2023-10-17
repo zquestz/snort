@@ -13,7 +13,8 @@
 }
 
 .nip05 .domain[data-domain="iris.to"],
-.nip05 .domain[data-domain="snort.social"] {
+.nip05 .domain[data-domain="snort.social"],
+.nip05 .domain[data-domain="snort.greyh.at"] {
   background-image: var(--snort-gradient);
 }
 

@@ -39,6 +39,9 @@ export default defineConfig({
     outDir: "build",
     commonjsOptions: { transformMixedEsModules: true },
     sourcemap: true,
+    rollupOptions: {
+      external: ["eventemitter3"],
+    }
   },
   clearScreen: false,
   publicDir: appConfig.get("publicDir"),

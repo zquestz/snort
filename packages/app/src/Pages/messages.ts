@@ -34,8 +34,8 @@ export default defineMessages({
   EasierToFind: { defaultMessage: "Make your profile easier to find and share", id: "/d6vEc" },
   Funding: { defaultMessage: "Fund developers and platforms providing NIP-05 verification services", id: "a5UPxh" },
   SnortSocialNip: {
-    defaultMessage: `Our very own NIP-05 verification service, help support the development of this site and get a shiny special badge on our site!`,
-    id: "k7sKNy",
+    defaultMessage: `Snort's very own NIP-05 verification service, help support the development of snort and get a shiny special badge on their site!`,
+    id: 'aMhWC5',
   },
   NostrPlebsNip: {
     defaultMessage: `Nostr Plebs is one of the first NIP-05 providers in the space and offers a good collection of domains at reasonable prices`,
