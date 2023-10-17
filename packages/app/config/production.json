@@ -1,0 +1,14 @@
+{
+  "appName": "Snort",
+  "appNameCapitalized": "Snort",
+  "appTitle": "Snort - Nostr",
+  "hostname": "snort.greyh.at",
+  "nip05Domain": "snort.greyh.at",
+  "favicon": "public/favicon.ico",
+  "appleTouchIconUrl": "/nostrich_512.png",
+  "httpCache": "",
+  "animalNamePlaceholders": false,
+  "features": {
+    "subscriptions": true
+  }
+}
