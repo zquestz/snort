@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  labels:
+    service: snort
+  name: snort
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      service: snort
+  template:
+    metadata:
+      labels:
+        service: snort
+    spec:
+      containers:
+      - image: zquestz/snort:latest
+        imagePullPolicy: Always
+        name: snort
+        ports:
+        - containerPort: 8001
+        resources:
+          requests:
+            memory: "16Mi"
+      restartPolicy: Always

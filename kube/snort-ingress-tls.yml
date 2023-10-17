@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: snort-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/tls-acme: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - snort.greyh.at
+    secretName: snort-tls
+  defaultBackend:
+    service:
+      name: snort
+      port:
+        number: 115
+  rules:
+  - host: snort.greyh.at
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: snort
+            port:
+              number: 115
