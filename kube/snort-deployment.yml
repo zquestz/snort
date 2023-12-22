@@ -16,7 +16,10 @@ spec:
         service: snort
     spec:
       containers:
-      - image: zquestz/snort:latest
+      - env:
+        - name: NODE_CONFIG_ENV
+          value: production
+        image: zquestz/snort:latest
         imagePullPolicy: Always
         name: snort
         ports:
