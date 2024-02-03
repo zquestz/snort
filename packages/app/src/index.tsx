@@ -71,17 +71,6 @@ async function initSite() {
     }
   });
 
-  // inject analytics script
-  // <script defer data-domain="snort.social" src="http://analytics.v0l.io/js/script.js"></script>
-  // if (CONFIG.features.analytics && (login.appData.item.preferences.telemetry ?? true)) {
-  //   const sc = document.createElement("script");
-  //   sc.src = "https://analytics.v0l.io/js/script.js";
-  //   sc.defer = true;
-  //   sc.setAttribute("data-domain", CONFIG.hostname);
-  //   document.head.appendChild(sc);
-  // }
-
-  setupWebLNWalletConfig(Wallets);
   return null;
 }
 
